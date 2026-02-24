@@ -1,0 +1,1272 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rochester&display=swap');
+
+
+:root {
+    --font-poppins: "Poppins", sans-serif;
+    --font-rochester: "Rochester", cursive;
+    --font-dancingScript: "Dancing Script", cursive;
+
+
+    /* ---------- color titulos -------------- */
+    --color-titulos: #013f75;
+    --color-parrafo: #013f75;
+    --color-button: #013f75;
+
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* ------------ header -------------- */
+
+.header {
+    position: relative;
+    height: 100dvh;
+    background-color: #baeaff6b;
+
+}
+
+.header__hojas {
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    left: 15%;
+}
+
+.header__hojas2 {
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    left: 2%;
+    top: -3em;
+    opacity: .5;
+}
+
+.header__imagen {
+    position: absolute;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: .5;
+}
+
+.header__overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: clamp(100px, 90%, 450px);
+    margin: 0 auto;
+    color: #013f75;
+    padding: 0 1rem;
+    
+}
+
+/* Fecha con líneas */
+.header__date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    width: clamp(100px, 100%, 500px);
+    font-family: var(--font-poppins);
+}
+
+.header__date::before,
+.header__date::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: currentColor;
+    margin: 0 0.75rem;
+    width: 50px;
+}
+
+.header__date time {
+    font-size: 1.2rem;
+    font-weight: 900;
+     text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+}
+
+/* Título y subtítulo */
+.header__title {
+    font-size: 5rem;
+    margin: 0;
+    font-family: var(--font-rochester);
+    color: #013f75;
+     text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+}
+
+.header__subtitle {
+    font-size: 2rem;
+    margin: 0.5rem 0 1.5rem;
+    font-family: var(--font-rochester);
+    font-weight: 400;
+    color: #013f75;
+     text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+}
+
+/* Línea divisoria */
+.header__divider {
+    width: 200px;
+    border: none;
+    height: 2px;
+    background: #013f75;
+    margin: 0 auto;
+}
+
+/* ------------- invitación ------------- */
+
+
+/* ---------------- Invitación con vectores ---------------- */
+.header__invite {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: none;
+    z-index: 2;
+    width: 90%;
+}
+
+.invite__comillas {
+    display: block;
+    width: 30px;
+    max-width: 10%;
+    
+}
+
+.invite__invert {
+    transform: scaleX(-1);
+
+}
+
+.invite__comillas:first-of-type {
+    margin-bottom: 0.5rem;
+}
+
+
+.invite__comillas:last-of-type {
+    margin-top: 0.5rem;
+}
+
+/* Texto central */
+.header__inviteText {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #0f58a7;
+    font-family: var(--font-poppins);
+    text-align: center;
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+}
+
+.wave__header {
+    position: absolute;
+    bottom: -1em;
+}
+
+.header__arrow {
+    position: absolute;
+    bottom: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    animation: arrow-bounce 600ms infinite;
+}
+
+@keyframes arrow-bounce {
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(15px);
+    }
+}
+
+
+/* --------------------- main ---------------------- */
+
+
+.wave__body {
+    position: relative;
+    margin-top: 100px;
+}
+
+.wave__flores {
+    position: absolute;
+    width: 70px;
+    left: 0;
+    top: 0;
+    bottom: 10%;
+    z-index: 100;
+}
+
+.main__wave {
+    position: absolute;
+    display: flex;
+    flex-grow: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.wave__vectorTOP {
+    position: absolute;
+    z-index: 5;
+    width: 340px;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%, -50%);
+}
+
+.heart {
+    width: clamp(100px, 90%, 200px);
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 500;
+    top: 0;
+
+    /* animation: pulse 500ms infinite alternate; */
+    /* Changed to pulse animation */
+}
+
+.heart__icon {
+    width: 30px;
+    position: absolute;
+    top: -2em;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: pulse 500ms infinite alternate
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateX(-50%) scale(1);
+        /* Original size */
+    }
+
+    100% {
+        transform: translateX(-50%) scale(1.3);
+        /* Grows to 120% of its size */
+    }
+}
+
+.heart__title {
+    margin: 0 auto .5em;
+    font-family: var(--font-dancingScript);
+    font-size: 1.5rem;
+    color: var(--color-titulos);
+}
+
+.heart__data {
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+
+.data__text {
+    border: 1px solid var(--color-parrafo);
+    color: var(--color-parrafo);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-poppins);
+    border-radius: .5em;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 0 auto .5em;
+    background-color: #ffffff;
+}
+
+.data__subtext {
+    margin: 0 auto;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: .7rem;
+    color: var(--color-parrafo);
+}
+
+.lineas {
+    position: absolute;
+    z-index: -1;
+    bottom: -300px;
+}
+
+
+
+.wave {
+    margin: 7em auto;
+}
+
+
+/* --------------- donde ------------------ */
+
+
+.donde {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: clamp(100px, 100%, 1800px);
+    margin: 0 auto;
+}
+
+.donde__flores {
+    position: absolute;
+    width: 100px;
+    z-index: 999;
+    left: 0;
+    bottom: 50%;
+}
+
+.donde__flores2 {
+    position: absolute;
+    width: 100px;
+
+    right: 0;
+    bottom: 10%;
+    z-index: -1;
+}
+
+.icon__contenedor {
+    margin: 250px auto 0;
+
+    background-color: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+}
+
+.donde__title {
+    background: url(../assets/vectores/cinta.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: clamp(100px, 80%, 400px);
+    margin: 0 auto;
+    font-family: var(--font-dancingScript);
+    color: #Fff;
+    font-size: 2rem;
+}
+
+.fiesta__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    max-width: 1200px;
+    /* O el valor que prefieras */
+    width: 90vw;
+    /* O 100%, según tu diseño */
+    margin: 0 auto;
+}
+
+
+
+.donde__datos {
+    flex-basis: 320px;
+    max-width: 350px;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-poppins);
+}
+
+
+
+.datos_text {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--color-titulos);
+    margin: 0 auto;
+}
+
+.datos_text2 {
+    font-weight: 500;
+    color: var(--color-parrafo);
+}
+
+.datos__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(100px, 60%, 300px);
+    margin: 0 auto;
+    padding: .7em 1em;
+    background-color: var(--color-button);
+    border: none;
+    color: #ffffff;
+    border-radius: 1em;
+    box-shadow: 0 0 3px #3c7dd1;
+    cursor: pointer;
+}
+
+.datos__salon {
+    color: var(--color-titulos);
+    margin: 1em auto;
+    font-size: 1rem;
+    border: 3px solid #fff;
+    background-color: #ffffff63;
+    padding: 1em;
+    border-radius: .5em;
+}
+
+.ligtbox {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: clamp(100px, 120%, 500px);
+    width: clamp(100px, 120%, 500px);
+    background: url(../assets/imagenes/lightbox.webp) center no-repeat;
+    background-size: contain;
+    z-index: 999;
+    font-family: var(--font-poppins);
+}
+
+
+.lightbox__confirmacion {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 70px auto 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+    gap: 0.75rem;
+}
+
+.opcional__msj {
+    display: flex;
+    width: clamp(100px, 75%, 380px);
+    margin: 0 auto;
+    height: 110px;
+}
+
+.ligtbox__buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.lightbox__button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: rgba(192, 233, 255, 0.85);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+
+.lightbox__input,
+.lightbox__textarea {
+    width: clamp(100px, 75%, 350px);
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+.lightbox__confirm {
+    margin-top: auto;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    background-color: #318adc;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+/* --- Estilos para el fondo y el botón de cierre del Lightbox --- */
+
+.lightbox-overlay {
+    display: none;
+    /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox__close {
+    position: absolute;
+    top: -2em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    color: #fff;
+    background-color: rgb(183, 31, 31);
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.lightbox__close:hover {
+    color: #000;
+}
+
+/* Evita el scroll del fondo cuando el lightbox está abierto */
+body.lightbox-open {
+    overflow: hidden;
+}
+
+
+.lightbox__button.selected {
+    background-color: #499ae5;
+    color: white;
+    border-color: #499ae5;
+    box-shadow: 0 0 10px #499ae5;
+}
+
+.lightbox__button {
+    transition: all 0.3s ease;
+}
+
+.lightbox__diet-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 90%;
+}
+
+.lightbox__diet-btn {
+    flex-grow: 1;
+    flex-basis: 40%;
+    max-width: 130px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    font-weight: bold;
+    cursor: pointer;
+    font-family: var(--font-poppins);
+    transition: all 0.3s ease;
+}
+
+.lightbox__diet-btn.full-width {
+    flex-basis: 100%;
+}
+
+.lightbox__diet-btn.selected {
+    background-color: #499ae5;
+    color: white;
+    border-color: #499ae5;
+    box-shadow: 0 0 10px #499ae5;
+}
+
+
+/* ------------------ fotos ------------------------ */
+
+
+
+.fotos {
+    margin: 3em auto;
+}
+
+.fotos__wave {
+    width: 100%;
+}
+
+.title {
+    font-family: var(--font-dancingScript);
+    text-align: center;
+    font-size: 1.9rem;
+    color: var(--color-titulos);
+    padding: 0 1.5em;
+}
+
+.parrafo {
+    text-align: center;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color-parrafo);
+    padding: 0 1em;
+    line-height: 1.3;
+    width: clamp(100px, 90%, 700px);
+    margin: 0 auto 2em;
+}
+.parrafo1 {
+    text-align: center;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--color-parrafo);
+    padding: 0 1em;
+    line-height: 1.3;
+    width: clamp(100px, 90%, 700px);
+    margin: 0 auto 2em;
+}
+.iconWEB {
+    display: flex;
+    width: 80px;
+    margin: 0 auto;
+}
+.iconWEB__dresscode{
+    display: flex;
+    width: clamp(100px, 85%, 200px);
+    margin: 2em auto;
+}
+
+/* ------------- fotos ---------------- */
+
+
+
+.fotos {
+    position: relative;
+}
+
+.fotos__flores {
+    position: absolute;
+    z-index: -1;
+    width: 80px;
+    top: 50px;
+}
+
+.fotos__title {
+    text-align: center;
+    font-family: var(--font-great-vives);
+    color: var(--color-titulos);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+
+.swiper {
+    width: clamp(100px, 100%, 700px);
+    height: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 10em;
+}
+
+.swiper-slide {
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-position: top;
+}
+
+.swiper-slide img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+/* ---------------- varios -------------------- */
+
+
+
+.varios {
+    margin: 2em auto;
+    position: relative;
+}
+
+.varios__flores {
+    position: absolute;
+    z-index: -1;
+    width: 90px;
+    left: 0;
+    top: -100px;
+}
+
+.varios__flores2 {
+    position: absolute;
+    z-index: -1;
+    width: 90px;
+    top: 140px;
+    right: 0;
+}
+
+.varios__flores3 {
+    position: absolute;
+    z-index: -1;
+    width: 90px;
+    top: 450px;
+    left: 0;
+}
+
+.varios__flores4 {
+    position: absolute;
+    z-index: -1;
+    width: 90px;
+    right: 0;
+    top: 800px;
+}
+
+
+
+.varios__title {
+    margin: 0 auto;
+    font-size: 2.3rem;
+}
+
+.parrafo__varios {
+    margin-bottom: 2em;
+}
+
+.varios__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+    width: clamp(100px, 90%, 1200px);
+    margin: auto;
+}
+
+.varios__card {
+    flex-basis: 280px;
+    max-width: 350px;
+    flex-grow: 1;
+    padding-bottom: 1.5em;
+}
+
+.card__title {
+    font-size: 2.5rem;
+    margin: 0 auto .5em;
+}
+
+.parrafo__card {
+    margin: 3em auto 1em;
+}
+
+.varios__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(100px, 80%, 350px);
+    margin: 0 auto;
+    padding: .7em 0;
+    font-family: var(--font-poppins);
+    background-color: var(--color-button);
+    border-radius: 1em;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 3px #003b6f;
+    color: #ffff;
+}
+
+/* Estilos exclusivos para los nuevos lightbox personalizados */
+.lightbox-custom-overlay {
+    font-family: var(--font-poppins);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.lightbox-custom-overlay.active {
+    display: flex;
+}
+
+.lightbox-custom-overlay .lightbox__content {
+    background: #ffffff;
+    border-radius: 16px;
+    width: clamp(100px, 90%, 500px);
+    margin: 0 auto;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.15);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.lightbox-custom-overlay .lightbox__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: #888;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.lightbox-custom-overlay .lightbox__close:hover {
+    color: rgb(157, 142, 75);
+}
+
+.lightbox-custom-overlay .lightbox__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0 0.5rem 0;
+    text-align: center;
+    color: var(--color-titulos);
+}
+
+.lightbox-custom-overlay .lightbox__input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+
+}
+
+.lightbox__list {
+    color: var(--color-titulos);
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.lightbox__list li {
+    margin-bottom: .5em;
+}
+
+.lightbox-custom-overlay .lightbox__button {
+    background: #f5e8e0;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.2s;
+}
+
+.lightbox-custom-overlay .lightbox__button:hover {
+    background: #e0cfc2;
+}
+
+.lightbox-custom-overlay .lightbox__paragraph {
+    font-size: 1rem;
+    color: var(--color-titulos);
+    text-align: center;
+}
+
+.lightbox-custom-overlay .iconWEB {
+    display: flex;
+    width: 80px;
+    margin: 0 auto 0.5rem auto;
+}
+
+@media (max-width: 600px) {
+    .lightbox-custom-overlay .lightbox__content {
+        padding: 1rem 0.5rem 1rem 0.5rem;
+    }
+
+    .lightbox-custom-overlay .lightbox__title {
+        font-size: 1.2rem;
+    }
+
+    .lightbox-custom-overlay .lightbox__input,
+    .lightbox-custom-overlay .lightbox__button {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+/* --------------- regalos ------------------ */
+
+.title__regalos {
+    font-size: 2.5rem;
+    margin: 2em auto 1em;
+}
+
+.regalos__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(100px, 60%, 380px);
+    margin: 2em auto;
+    padding: .7em 1em;
+    background-color: var(--color-button);
+    font-family: var(--font-poppins);
+    border: none;
+    color: #ffffff;
+    border-radius: 1em;
+    box-shadow: 0 0 3px #226cac;
+    cursor: pointer;
+}
+
+.regalos__cbu,
+.regalos__alias {
+    margin: 0 auto -1em;
+    color: var(--color-titulos);
+}
+
+.lightbox-custom-overlay .regalos__copy-btn {
+    margin: 2em auto 1em;
+    background-color: #74b7f2;
+    /* Tono celeste */
+    color: #fff;
+}
+
+.lightbox-custom-overlay .regalos__copy-btn:hover {
+    background-color: #5a9bd4;
+}
+
+.lightbox-custom-overlay .playlist__btn {
+    background-color: #74b7f2;
+    color: #fff;
+}
+
+.lightbox-custom-overlay .playlist__btn:hover {
+    background-color: #013f75;
+}
+
+
+/* ---------------- Agradecimiento ------------------- */
+
+.familia {
+    margin: 0 auto 3em;
+}
+
+
+/* ------------------ instagram ------------------- */
+
+
+.instagram {
+    overflow: hidden;
+    display: none;
+}
+
+.instagram__contenido {
+    background-color: #013f75;
+    margin: 0 auto;
+    margin: 0;
+    height: 60vh;
+}
+
+.wave-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wave-container.invertida svg {
+    transform: rotate(180deg);
+}
+
+.wave-container svg,
+.wave__header {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+.fondo-onda {
+    fill: var(--fondo-color, #013f75);
+}
+
+.linea-decorativa {
+    stroke: var(--linea-color, #013f75);
+    fill: none;
+    stroke-width: 2;
+}
+
+.tituloInstagram {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.parrafoInsta {
+    color: #fff;
+}
+
+.instagramDire {
+    font-family: var(--font-poppins);
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.instagram__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(100px, 60%, 380px);
+    margin: 0 auto;
+    padding: .7em 1em;
+    background-color: var(--color-button);
+    border: none;
+    color: #116cb6;
+    border-radius: 1em;
+    box-shadow: 0 0 3px #0f58a7;
+    cursor: pointer;
+    font-family: var(--font-poppins);
+
+}
+
+
+/* ---------------------- Frase Final -------------------------- */
+
+.fraseFinal {
+    background-color: #013f75;
+    display: flex;
+    width: clamp(100px, 90%, 700px);
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.fraseFinal__text {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    padding: 0 1em;
+    color: #fff;
+    font-size: 1em;
+}
+
+/* --------------- cierre ------------- */
+
+
+.cierre {
+    margin: 3em auto 5em;
+}
+
+.title__cierre {
+    font-size: 4rem;
+    font-family: var(--font-rochester);
+    margin: 0 auto;
+    color: #013f75;
+}
+
+.cierre__subtitle {
+    font-size: 2rem;
+    margin: 0.5rem 0 1.5rem;
+    font-family: var(--font-rochester);
+    font-weight: 100;
+    color: #013f75;
+    text-align: center;
+}
+
+
+/* --------------- footer --------------------- */
+
+
+
+/* ///////////////// INFO ///////////////////////// */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #776c4c;
+    overflow: hidden;
+}
+
+.info__text {
+    font-family: var(--font-poppins);
+    color: #fff;
+    font-size: .8rem;
+    padding: 0 1em;
+    line-height: 1.5;
+    margin: .7em;
+    font-weight: 500;
+}
+
+.info_icon {
+    width: 20px;
+}
+
+.info__link {
+    padding: .5em;
+    color: #e9d0a9;
+    font-size: 1rem;
+}
+
+/* --------- Modal de Bienvenida --------- */
+.welcome-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(40, 60, 60, 0.85);
+    z-index: 3000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-modal {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-modal__content {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    padding: 2.5rem 2rem 2rem 2rem;
+    text-align: center;
+    max-width: 500px;
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.welcome-modal__date {
+    color: #013f75;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #013f75;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome-modal__title {
+    font-family: var(--font-dancingScript);
+    font-size: 2rem;
+    color: #fff;
+    background: #013f75;
+    border-radius: 10px;
+    padding: 0.5em 0.2em;
+    margin-bottom: 0.5rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    hyphens: auto;
+    line-height: 1.1;
+}
+
+.welcome-modal__subtitle {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-poppins);
+}
+
+.welcome-modal__buttons {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.welcome-modal__button {
+    background: #013f75;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 2em;
+    padding: 0.8em 2em;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    transition: background 0.2s, color 0.2s;
+}
+
+.welcome-modal__button:hover {
+    background: #0f58a7;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .welcome-modal__content {
+        padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+        font-size: 1rem;
+    }
+
+    .welcome-modal__title {
+        font-size: 1.7rem;
+    }
+
+    .welcome-modal__button {
+        font-size: 1rem;
+        padding: 0.7em 1.2em;
+    }
+}

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Taiz - Mis XV Años" />
+    <meta property="og:description"
+        content="¡La cuenta regresiva ha comenzado! Descubre los detalles y confirma tu asistencia." />
+
+    <meta property="og:image" content="https://lunofest.github.io/15Taiz130326/assets/imagenes/miniatura.png" />
+    <meta property="og:url" content="https://lunofest.github.io/15Taiz130326/" />
+    <meta property="og:type" content="website" />
+
+    <meta property="og:image:type" content="image/png" />
+
+
+    <link rel="stylesheet" href="estilos/normalize.css?v7">
+    <link rel="stylesheet" href="estilos/styles.css?v7">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?v7" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="cache.js"></script>
+    <script src="main.js"></script>
+    <title>Mis 15 años</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <img class="header__hojas" src="assets/imagenes/flores1.webp" alt="" data-aos="fade-down"
+            data-aos-easing="linear" data-aos-duration="500">
+        <img class="header__hojas header__hojas2" src="assets/imagenes/flores1.webp" alt="" data-aos="fade-down"
+            data-aos-easing="linear" data-aos-duration="1000">
+        <img class="header__imagen" src="assets/imagenes/fondo.webp" alt="fondo">
+        <div class="header__overlay">
+            <div class="header__date">
+                <time datetime="2025-04-12">13.03.2026</time>
+            </div>
+            <h1 class="header__title">Taiz</h1>
+            <h2 class="header__subtitle">Mis XV años</h2>
+            <hr class="header__divider">
+        </div>
+
+        <div class="header__invite">
+            <img class="invite__comillas" src="assets/vectores/comilla.svg" alt="">
+            <h3 class="header__inviteText">Llegaron Mis XV: Una noche para celebrar, reír y crear recuerdos juntos.
+            </h3>
+            <img class="invite__comillas invite__invert" src="assets/vectores/comilla.svg" alt="">
+        </div>
+
+        <img class="header__arrow" src="assets/vectores/arrow.svg" alt="">
+
+
+
+        <svg class="wave__header" width="100%" height="90" viewBox="0 0 100 20" preserveAspectRatio="none">
+            <path d="M0,10 C25,0 75,20 100,10 L100,20 L0,20 Z" fill="#ffff" />
+        </svg>
+
+
+    </header>
+
+    <main>
+
+
+        <section class="wave__body">
+            <img class="main__wave" src="assets/vectores/wave.svg" alt="">
+            <img class="wave__vectorTOP" src="assets/imagenes/vectorTOP.webp" alt="">
+            <div class="heart">
+                <img class="heart__icon" src="assets/vectores/heart.svg" alt="">
+                <h5 class="heart__title">Falta muy poco!</h5>
+                <div class="heart__data">
+                    <div class="data mes">
+                        <h5 class="data__text" id="days">00</h5>
+                        <h5 class="data__subtext">Días</h5>
+                    </div>
+                    <div class="data dias">
+                        <h5 class="data__text" id="hours">00</h5>
+                        <h5 class="data__subtext">Horas</h5>
+                    </div>
+                    <div class="data horas">
+                        <h5 class="data__text" id="minutes">00</h5>
+                        <h5 class="data__subtext">Min.</h5>
+                    </div>
+                    <div class="data horas">
+                        <h5 class="data__text" id="seconds">00</h5>
+                        <h5 class="data__subtext">Seg.</h5>
+                    </div>
+                </div>
+            </div>
+
+            <img class="lineas" src="assets/vectores/lineas.svg" alt="">
+            <img class="wave__flores" src="assets/imagenes/flores3.webp" alt="" data-aos="zoom-in-right">
+        </section>
+
+        <section class="donde">
+
+            <img class="donde__flores" src="assets/imagenes/flores3.webp" alt="" data-aos="fade-right">
+            <img class="donde__flores2" src="assets/imagenes/flores2.webp" alt="" data-aos="zoom-in-left">
+
+            <div class="icon__contenedor">
+                <img class="icon" src="assets/vectores/regalosICON.svg" alt="">
+            </div>
+
+            <h4 class="donde__title">Fiesta</h4>
+
+            <div class="fiesta__container">
+
+                <div class="donde__datos donde__datos1">
+                    <h4 class="datos_text">Día</h4>
+                    <h4 class="datos_text2">Viernes 13 de Marzo 22:00hs - 2026</h4>
+                    <a class="datos__button"
+                        href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NDUxZzB0c3A4MG05M2NtNzk3dnNqZjJyc2UgbHVub2Nvb3JwQG0&tmsrc=lunocoorp%40gmail.com">AGENDAR</a>
+                </div>
+
+                <div class="donde__datos donde__datos2">
+                    <h4 class="datos_text">Lugar</h4>
+                    <h5 class="datos__salon">Salón keké </h5>
+                    <button class="datos__button" id="openLightboxBtn">CONFIRMAR ASISTENCIA</button>
+
+                </div>
+
+                <div class="donde__datos donde__datos2">
+                    <h4 class="datos_text">Dirección</h4>
+                    <h4 class="datos_text2">Diagonal Lechesse km 3.5 Camino 14, Tafí Viejo, Tucumán </h4>
+                    <a class="datos__button" href="https://maps.app.goo.gl/5kcdqavKaCB62x8S8?g_st=iw">¿CÓMO LLEGAR?</a>
+                </div>
+            </div>
+        </section>
+
+        <img class="wave" src="assets/vectores/wave.svg" alt="">
+
+
+        <section style="display: none;" class="fotos">
+
+            <img class="fotos__flores" src="assets/imagenes/flores3.webp" alt="" data-aos="fade-right">
+
+            <!-- <img class="fotos__wave" src="assets/vectores/wave2.svg" alt=""> -->
+
+            <h3 class="title">Un recorrido de estos 15 años</h3>
+
+            <p class="parrafo">Siendo feliz cada momento de mi vida</p>
+
+            <img class="iconWEB" src="assets/vectores/camara.svg" alt="">
+
+            <section class="fotos">
+
+
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/imagenes/fotos/uno.webp" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imagenes/fotos/dos.webp" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imagenes/fotos/tres.webp" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imagenes/fotos/cuatro.webp" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imagenes/fotos/cinco.webp" />
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="varios">
+
+            <img class="varios__flores" src="assets/imagenes/flores3.webp" alt="" data-aos="fade-right">
+
+            <img class="varios__flores2" src="assets/imagenes/flores2.webp" alt="" data-aos="fade-left">
+
+            <img class="varios__flores3" src="assets/imagenes/flores3.webp" alt="" data-aos="fade-right">
+
+            <img class="varios__flores4" src="assets/imagenes/flores2.webp" alt="" data-aos="fade-left">
+
+            <h4 class="title varios__title">Festejemos juntos!</h4>
+            <p class="parrafo parrafo__varios">¡Hagamos una fiesta épica!</p>
+
+            <div class="varios__container">
+
+                <div class="varios__card">
+
+                    <h4 class="title card__title">Música</h4>
+
+                    <img class="iconWEB" src="assets/vectores/musica.svg" alt="">
+
+                    <p class="parrafo parrafo__card">¿Cuál es la canción que no puede faltar en la Playlist de la
+                        fiesta?</p>
+
+                    <button class="varios__button" id="playlist">Sugerir canción</button>
+
+                </div>
+
+                <div class="varios__card">
+
+                    <h4 class="title card__title">DressCode</h4>
+
+                    <img class="iconWEB" src="assets/vectores/moño.svg" alt="">
+
+                    <p class="parrafo parrafo__card">ELEGANTE</p>
+
+                    <button class="varios__button" id="dresscode">Ver más</button>
+
+                </div>
+
+                <div class="varios__card">
+
+                    <h4 class="title card__title">Tips y Notas</h4>
+
+                    <img class="iconWEB" src="assets/vectores/notas.svg" alt="">
+
+                    <p class="parrafo parrafo__card">Información adicional
+                        para tener en cuenta</p>
+
+                    <button class="varios__button" id="tips">+INFO</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="regalo">
+
+            <div class="regalos__container">
+
+                <img class="regalos__wave" src="assets/vectores/wave.svg" alt="">
+
+
+                <h4 class="title title__regalos">Regalos</h4>
+
+                <p class="parrafo">Si deseas regalarme algo más que tu hermosa presencia,
+                    podrás dejar tu presente en la mesa de regalos o podés hacerlo por transferencia, aquí tienes mis
+                    datos:</p>
+
+                <img class="iconWEB" src="assets/vectores/regalos.svg" alt="">
+
+                <button class="regalos__button" id="regalos">VER MAS</button>
+
+            </div>
+
+        </section>
+
+        <img class="wave" src="assets/vectores/wave.svg" alt="">
+
+        <section style="display: none;" class="familia">
+            <p class="parrafo">"Deseo expresar mi profundo agradecimiento a todos mis familiares y amigos que me
+                acompañan en esta etapa, y quiero destacar el valioso
+                sacrificio realizado especialmente por mis padres, cuyo apoyo fué fundamental para hacer realidad
+                este momento tan significativo en mi vida"</p>
+            <h3 class="title">Mis Padres</h3>
+            <p class="parrafo1">Mariela y Eduardo</p>
+            <!-- <h3 class="title">Mis Padrinos</h3>
+            <p class="parrafo">Luis y Noelia</p> -->
+        </section>
+
+
+        <section class="instagram">
+
+            <div class="wave-container">
+                <svg viewBox="0 0 1000 150" preserveAspectRatio="none">
+                    <path class="fondo-onda" d="M0,60 C250,150 750,0 1000,80 L1000,150 L0,150 Z" />
+                    <path class="linea-decorativa" d="M0,120 C300,200 600,0 1000,100" />
+                </svg>
+            </div>
+
+            <div class="instagram__contenido">
+
+                <img class="iconWEB" src="assets/vectores/instagram.svg" alt="">
+
+                <h4 class="title tituloInstagram">Compartimos este día junto a vos
+                </h4>
+                <p class="parrafo parrafoInsta">Comparte tus fotos y vídeos de este hermoso día</p>
+
+                <p class="instagramDire">@guada.salaberry</p>
+
+
+                <a class="instagram__button"
+                    href="https://www.instagram.com/guada.salaberry/?utm_source=ig_web_button_share_sheet">VER EN
+                    INSTAGRAM</a>
+
+            </div>
+
+            <div class="wave-container invertida">
+                <svg viewBox="0 0 1000 150" preserveAspectRatio="none">
+                    <path class="fondo-onda" d="M0,60 C250,150 750,0 1000,80 L1000,150 L0,150 Z" />
+                    <path class="linea-decorativa" d="M0,120 C300,200 600,0 1000,100" />
+                </svg>
+            </div>
+
+
+        </section>
+
+        <section class="fraseFinal">
+            <h5 class="fraseFinal__text">
+                "Será una noche única, y tu presencia la hará inolvidable. Acompañame a celebrar este momento tan
+                especial de mi vida"
+            </h5>
+        </section>
+
+        <section class="cierre">
+
+            <h4 class="title title__cierre">Taiz</h4>
+            <h4 class="cierre__subtitle">Mis 15 Años</h4>
+
+        </section>
+
+    </main>
+
+    <footer class="footer__final1">
+        <div class="footer__inner1">
+            <div class="footer__brand1">
+                <p class="footer__text1">
+                    Página creada por <strong>Luno Digitales</strong>
+                    para los 15 años de <strong>Taiz</strong>.<br>
+                    Todos los derechos reservados. <br>Visítano en:
+                </p>
+
+            </div>
+
+
+            <a class="footer__site1" href="https://www.luno.net.ar" target="_blank" rel="noopener">www.luno.net.ar</a>
+            <div class="footer__social3">
+                <p class="footer__follow1">Síguenos en nuestras redes</p>
+                <a class="icon-link1"
+                    href="https://www.instagram.com/lunodigitales?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    aria-label="Instagram de Luno Digitales">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"
+                            fill="none" />
+                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" fill="none" />
+                        <circle cx="18.2" cy="5.8" r="0.7" fill="currentColor" />
+                    </svg>
+                </a>
+                <a class="icon-link1" href="https://www.facebook.com/profile.php?id=61581720891655" target="_blank"
+                    rel="noopener" aria-label="Facebook de Luno Digitales">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <style>
+        /* ///////////////// footer /////////////////////// */
+
+
+        .footer__final1 {
+            background: linear-gradient(180deg, #0f57b6 0%, #daeeff 100%);
+            color: #414141;
+            padding: 1.5em 0;
+
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            font-size: 14px;
+            width: clamp(100px, 100%, 1800px);
+            text-align: center;
+            margin: 0 auto 0;
+        }
+
+        .footer__inner1 {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            align-items: center;
+            text-align: center;
+            padding: 0 1em;
+        }
+
+        .footer__text1 {
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .footer__text1 strong {
+            color: #0b0b0b;
+            font-weight: 700;
+        }
+
+        .footer__site1 {
+            display: inline-block;
+            margin-top: 8px;
+            text-decoration: none;
+            color: #414141;
+            font-weight: 600;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .footer__site1:hover {
+            text-decoration: underline;
+        }
+
+        .footer__social3 {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 5px;
+        }
+
+        .footer__follow1 {
+            margin: 0;
+            font-size: 14px;
+            color: #414141;
+            font-weight: 500;
+        }
+
+        .footer__final1 .icon-link1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #414141;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .footer__final1 .icon-link1 svg {
+            width: 28px !important;
+            height: 28px !important;
+            display: block;
+            margin: 0;
+        }
+
+        .footer__final1 .icon-link1:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+
+
+    <!-- Contenedor del Lightbox -->
+    <div class="lightbox-overlay" id="lightboxOverlay">
+        <div class="ligtbox" id="confirmationLightbox">
+            <div class="lightbox__confirmacion">
+                <span class="lightbox__close">&times;</span>
+                <div class="ligtbox__buttons">
+                    <button class="lightbox__button" id="siAsistire">SI ASISTIRÉ</button>
+                    <button class="lightbox__button" id="noAsistire">NO ASISTIRÉ</button>
+                </div>
+                <input type="text" class="lightbox__input" placeholder="Escribe tu nombre" />
+                <div class="lightbox__diet-options">
+                    <button class="lightbox__diet-btn" data-diet="Celiac@">Celiac@</button>
+                    <button class="lightbox__diet-btn" data-diet="Vegan@">Vegan@</button>
+                    <button class="lightbox__diet-btn" data-diet="Diabetic@">Diabetic@</button>
+                    <button class="lightbox__diet-btn" data-diet="Hipertens@">Hipertens@</button>
+                    <button class="lightbox__diet-btn full-width" data-diet="Ninguna">Ninguna</button>
+                </div>
+                <!-- <textarea class="opcional__msj" name="" id="" placeholder="Mensaje opcional"></textarea> -->
+                <button class="lightbox__confirm">Confirmar Presencia</button>
+                <button style="display: none;" class="lightbox__confirm lightbox__confirm2">Confirmar a Mariela</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Sugerir Canción -->
+    <div class="lightbox-custom-overlay" id="lightboxPlaylist">
+        <div class="lightbox__content">
+            <span class="lightbox__close">&times;</span>
+            <img class="iconWEB" src="assets/vectores/musica.svg" alt="Música">
+            <h3 class="lightbox__title">Sugerir una canción</h3>
+            <input type="text" class="lightbox__input" placeholder="Nombre de la canción">
+            <input type="text" class="lightbox__input" placeholder="Link (opcional)">
+            <button class="lightbox__button playlist__btn">Sugerir canción</button>
+        </div>
+    </div>
+
+    <!-- Lightbox DressCode -->
+    <div class="lightbox-custom-overlay" id="lightboxDresscode">
+        <div class="lightbox__content">
+            <span class="lightbox__close">&times;</span>
+            
+            <h3 class="lightbox__title">Hombres: Traje <br>Mujeres: Vestido Largo</h3>
+            <img class=" iconWEB__dresscode" src="assets/imagenes/dresscodesilueta.webp" alt="DressCode">
+
+            <p class="lightbox__paragraph">Evitar las prendas en tonos azul y sus gamas</p>
+        </div>
+    </div>
+
+    <!-- Lightbox Tips y Notas -->
+    <div class="lightbox-custom-overlay" id="lightboxTips">
+        <div class="lightbox__content">
+            <span class="lightbox__close">&times;</span>
+            <img class="iconWEB" src="assets/vectores/notas.svg" alt="Tips y Notas">
+            <h3 class="lightbox__title">Tips y Notas</h3>
+            <p class="lightbox__paragraph">• ¡Por favor ser puntuales! <br>
+
+                • Confirmar asistencia hasta el Viernes 06 de Marzo. <br>
+                • Quiero que disfrutes cada momento de mi fiesta
+            </p>
+
+            <ul class="lightbox__list">
+                <h3 class="lightbox__chanchi">CRONOGRAMA</h3>
+                <li>22:00 Recepción</li>
+                <li>23:00 Ingreso cumpleañera</li>
+                <li>23:30 Cena</li>
+                <li>01:00 Inicio del Baile</li>
+                <li>06:00 Finalización</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Lightbox Regalos -->
+    <div class="lightbox-custom-overlay" id="lightboxRegalos">
+        <div class="lightbox__content regalos__content">
+            <span class="lightbox__close regalos__close">&times;</span>
+            <img class="iconWEB regalos__icon" src="assets/vectores/regalos.svg" alt="Regalos">
+            <h3 class="lightbox__title regalos__title">Regalos Fisicos y Transferencias</h3>
+            <h3 class="lightbox__title regalos__title">Titular: Taiz Amira Ayudarte</h3>
+            <p class="lightbox__paragraph regalos__paragraph">Datos: </p>
+            <h4 class="lightbox__cbu regalos__cbu">CBU: <span class="copy-text regalos__cbu-text"
+                    id="cbuText">0000003100043534673920</span></h4>
+            <button class="lightbox__button regalos__copy-btn" id="copyCbu">Copiar CBU</button>
+            <h4 class="lightbox__alias regalos__alias">Alias: <span class="copy-text regalos__alias-text"
+                    id="aliasText">Taiz.martinz.22</span></h4>
+            <button class="lightbox__button regalos__copy-btn" id="copyAlias">Copiar Alias</button>
+        </div>
+    </div>
+
+    <!-- Modal de Bienvenida -->
+    <div class="welcome-modal-overlay" id="welcomeModal">
+        <div class="welcome-modal">
+            <div class="welcome-modal__content">
+                <div class="welcome-modal__date">13.03.2026</div>
+                <h2 class="welcome-modal__title">
+                    Bienvenidos a la invitación<br>de Taiz
+                </h2>
+                <p class="welcome-modal__subtitle">La música de fondo es parte de la experiencia</p>
+                <div class="welcome-modal__buttons">
+                    <button class="welcome-modal__button" id="btnConMusica">INGRESAR CON MÚSICA</button>
+                    <button class="welcome-modal__button" id="btnSinMusica">INGRESAR SIN MÚSICA</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="javascript/script.js?v7"></script>
+</body>
+
+</html>
